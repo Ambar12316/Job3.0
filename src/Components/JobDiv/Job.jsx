@@ -41,8 +41,8 @@ const Data = [
 
 const Jobs = () => {
     return (
-        <div className="py-12 px-6 bg-gray-100">
-            <div className="max-w-7xl mx-auto">
+        <div className=" bg-gray-100">
+            <div className=" mx-auto">
                 <div className="jobContainer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
                     {Data.map(({ id, title, time, location, desc, company }) => (
                         <div key={id} className="group singleJob w-full p-[25px] bg-white rounded-[15px] hover:bg-blue-600 shadow-lg hover:shadow-2xl transition-all transform hover:scale-105">
