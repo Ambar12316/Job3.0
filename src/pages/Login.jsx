@@ -1,8 +1,10 @@
 import React from 'react';
 import './Login.css';
-
+import { useAuth0 } from "@auth0/auth0-react";
 const Login = () => {
-  return (
+  const { loginWithRedirect } = useAuth0();
+  return <button onClick={() => loginWithRedirect()}>Log In</button>;
+};
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-3xl font-bold text-center text-blue-600 mb-6">Login</h2>
@@ -47,7 +49,6 @@ const Login = () => {
         </p>
       </div>
     </div>
-  );
-};
+ 
 
 export default Login;

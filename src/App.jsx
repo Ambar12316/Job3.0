@@ -12,6 +12,7 @@ import Contact from "./pages/Contact.jsx";
 import Blog from "./pages/Blog.jsx";
 import Companies from "./pages/Companies.jsx";
 import Apply from './pages/Apply.jsx'; 
+import Announcement from "./pages/Announcement.jsx";
 import './App.css';  
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/companies" element={<Companies />} />
           <Route path="/apply" element={<Apply />} />
+          <Route path="/announcement" element={<Announcement />} />
 
         </Routes>
         <Footer />
