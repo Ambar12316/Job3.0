@@ -32,7 +32,7 @@ const Companies = () => {
     };
 
     return (
-        <div className="py-12 px-24 bg-gray-200 min-h-screen w-screen">
+        <div className="py-12 px-24 min-h-screen w-screen m-0">
             <div className="">
                 {/* Search and Filter Section */}
                 <div className="mb-8 flex flex-col md:flex-row gap-4 items-center">

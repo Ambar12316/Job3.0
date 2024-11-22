@@ -29,8 +29,8 @@ const Announcement = () => {
       <h2 className="text-2xl font-bold mb-4">Announcements</h2>
       
       {/* Filter Section */}
-      <div className="filter-section mb-6 bg-slate-200 py-2 px-1 rounded-md">
-        <h3 className="text-xl font-medium mb-2">Filter Out Announcements:</h3>
+      <div className="filter-section mb-6 bg-gray-100 py-2 px-4 rounded-lg shadow-md ">
+        <h3 className="text-xl font-bold mb-2">Filters:</h3>
         <div className="filters flex flex-wrap gap-4 ">
           {announcementTypes.map((type) => (
             <label key={type} className="flex items-center space-x-2">

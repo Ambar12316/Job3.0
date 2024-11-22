@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Jobs from "./Components/JobDiv/Job";
 import NavBar from "./Components/NavBar/NavBar";
 //import Search from "./Components/SearchDiv/Search";
-import Value from "./Components/ValueDiv/Value";
+//import Value from "./Components/ValueDiv/Value";
 import Footer from "./Components/Footerdiv/Footer";
 import AboutUs from "./pages/aboutus.jsx";
 import Login from "./pages/Login.jsx";
@@ -25,7 +25,7 @@ const App = () => {
             <>
               {/* <Search /> */}
               <Jobs />
-              <Value />
+              {/* <Value /> */}
             </>
           } />
           <Route path="/aboutus" element={<AboutUs />} />

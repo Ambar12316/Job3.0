@@ -6,7 +6,7 @@ const NavBar = () => {
     const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
 
     return (
-        <div className="pt-[8rem]">
+        <div className="pt-[8rem] ">
             <div className="navbar flex justify-between items-center py-[2rem] px-[4rem] bg-white shadow-md fixed top-0 left-0 w-full z-50">
                 {/* Logo Section */}
                 <div className="logoDiv">
@@ -31,7 +31,7 @@ const NavBar = () => {
                     </Link>
                     <Link to="/aboutus">
                         <div className="menuList text-[24px] font-medium text-gray-600 hover:text-blue-600 transition-all duration-300 cursor-pointer">
-                            About us
+                            Profile
                         </div>
                     </Link>
                     <Link to="/contact">
