@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Jobs from "./Components/JobDiv/Job";
 import NavBar from "./Components/NavBar/NavBar";
-import Search from "./Components/SearchDiv/Search";
+//import Search from "./Components/SearchDiv/Search";
 import Value from "./Components/ValueDiv/Value";
 import Footer from "./Components/Footerdiv/Footer";
 import AboutUs from "./pages/aboutus.jsx";
@@ -23,7 +23,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={
             <>
-              <Search />
+              {/* <Search /> */}
               <Jobs />
               <Value />
             </>

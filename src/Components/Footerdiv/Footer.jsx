@@ -3,7 +3,7 @@ import { AiFillInstagram } from 'react-icons/ai';
 
 const Footer = () => {
     return (
-        <div className='footer p-[5rem] mb-4 bg-gray-800 rounded-[10px] gap-[8px] grid grid-cols-5 m-auto items-center justify-center'>
+        <div className='footer p-[5rem] mb-4 bg-gray-800 rounded-[10px] gap-[8px] grid grid-cols-5  items-center w-full'>
             <div>
                 <div className="logoDiv">
                     <h1 className="logo text-[25px] text-white pb-[1.5rem]">

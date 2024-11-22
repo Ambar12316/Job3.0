@@ -10,13 +10,15 @@ const NavBar = () => {
             <div className="navbar flex justify-between items-center py-[2rem] px-[4rem] bg-white shadow-md fixed top-0 left-0 w-full z-50">
                 {/* Logo Section */}
                 <div className="logoDiv">
-                    <h1 className="logo text-[32px] font-bold text-blue-600 tracking-wide px-5">
-                        JOBS <span className="text-black">3.0</span>
-                    </h1>
+                    <Link to="/">
+                        <h1 className="logo text-[32px] font-bold text-blue-600 tracking-wide px-5 ">
+                            JOBS <span className="text-black">3.0</span>
+                        </h1>
+                    </Link>
                 </div>
 
                 {/* Navigation Links */}
-                <div className="menu flex gap-10">
+                <div className="menu hidden md:flex gap-10">
                     <Link to="/companies">
                         <div className="menuList text-[24px] font-medium text-gray-600 hover:text-blue-600 transition-all duration-300 cursor-pointer">
                             Jobs
@@ -42,9 +44,9 @@ const NavBar = () => {
                 {/* Auth Buttons */}
                 <div className="authButtons flex gap-4">
                     {isAuthenticated ? (
-                        <>
-                            <div className="userInfo text-[21px] font-medium text-gray-600">
-                                Welcome, {user?.name}
+                        <div className="flex items-center gap-4">
+                            <div className="userInfo text-[18px] font-medium text-gray-600">
+                                Welcome, <span className="text-blue-600 font-semibold">{user?.name}</span>
                             </div>
                             <button
                                 className="menuList text-[21px] font-medium text-white bg-red-600 px-4 py-2 rounded-md hover:bg-red-700 cursor-pointer"
@@ -52,7 +54,7 @@ const NavBar = () => {
                             >
                                 Log Out
                             </button>
-                        </>
+                        </div>
                     ) : (
                         <button
                             className="menuList text-[21px] font-medium text-white bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700 cursor-pointer"
@@ -61,6 +63,12 @@ const NavBar = () => {
                             Log In
                         </button>
                     )}
+                </div>
+
+                {/* Mobile Menu */}
+                <div className="menuToggle md:hidden">
+                    {/* Add functionality for a toggleable menu here */}
+                    <span className="text-gray-600">☰</span>
                 </div>
             </div>
         </div>
