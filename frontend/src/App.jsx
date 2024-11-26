@@ -5,7 +5,7 @@ import NavBar from "./Components/NavBar/NavBar";
 //import Search from "./Components/SearchDiv/Search";
 //import Value from "./Components/ValueDiv/Value";
 import Footer from "./Components/Footerdiv/Footer";
-import AboutUs from "./pages/aboutus.jsx";
+import Profile from "./pages/Profile.jsx";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -28,7 +28,7 @@ const App = () => {
               {/* <Value /> */}
             </>
           } />
-          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/aboutus" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/contact" element={<Contact />} />
